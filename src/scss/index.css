@@ -129,13 +129,13 @@ header nav a:last-child {
           justify-content: space-between;
   border-radius: 0.5rem;
   max-width: 1700px;
-  margin: 2rem auto 0 0;
+  margin: 2rem auto 0 auto;
   background: #10142e;
   padding-left: 2rem;
 }
 
 .card:first-child {
-  margin: 0rem auto 0 0;
+  margin: 0rem auto 0 auto;
 }
 
 .card p {
@@ -158,5 +158,27 @@ header nav a:last-child {
 .card button:hover {
   -webkit-box-shadow: 0px 0px 20px #f6a11f;
           box-shadow: 0px 0px 20px #f6a11f;
+}
+
+footer {
+  max-width: 1700px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 3rem 0;
+}
+
+footer .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+}
+
+footer .sec-footer li {
+  margin-bottom: 1rem;
+  list-style: none;
 }
 /*# sourceMappingURL=index.css.map */
