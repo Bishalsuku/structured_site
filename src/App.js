@@ -1,17 +1,20 @@
 import React from "react";
-import CareerSection from "./components/CareerSection.component";
 import Header from "./components/Header.component";
-import Title from "./components/Title.component";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Careers from "./pages/Careers.page";
+import Home from "./pages/Home.page";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Title
-        firstText="Looking For"
-        secondText="Motivated And Creative People"
-      />
-      <CareerSection />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/careers" exact element={<Careers />} />
+        </Routes>
+      </Router>
     </>
   );
 };

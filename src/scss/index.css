@@ -28,7 +28,7 @@ header .header-wrapper {
           justify-content: space-between;
 }
 
-header ul {
+header nav {
   color: #fff;
   list-style: none;
   display: -webkit-box;
@@ -42,11 +42,18 @@ header ul {
           justify-content: center;
 }
 
-header ul li {
+header nav a {
+  text-decoration: none;
+  color: #fff;
   margin-right: 2rem;
+  border-bottom: 1px solid transparent;
 }
 
-header ul li:last-child {
+header nav a.active {
+  border-bottom: 1px solid #f6a11f;
+}
+
+header nav a:last-child {
   margin: 0;
 }
 

@@ -24,14 +24,21 @@ header {
     justify-content: space-between;
   }
 
-  ul {
+  nav {
     color: #fff;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    li {
+    a {
+      text-decoration: none;
+      color: #fff;
       margin-right: 2rem;
+      border-bottom: 1px solid transparent;
+
+      &.active {
+        border-bottom: 1px solid #f6a11f;
+      }
 
       &:last-child {
         margin: 0;
